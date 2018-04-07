@@ -8,35 +8,30 @@
 
 <body>
     <form action="https://formspree.io/emilaw_23@o2.pl" method="POST">
-        <label for="imie">Imię</label>
+        <label>Imię<input type="text" name="imie"></label>
         <br>
-        <input type="text" name="imie" id="imie">
+        <label>Nazwisko<input type="text" name="nazwisko"></label>
         <br>
-        <label for="nazwisko">Nazwisko</label>
+        <label>kobieta <input type="radio" name="female" id="male"></label>
+
         <br>
-        <input type="text" name="nazwisko" id="nazwisko">
+        <label>mężczyzna<input type="radio" name="male"></label>
+
         <br>
-        <label for="female">kobieta</label>
-        <input type="radio" name="female" id="male">
-        <br>
-        <label for="male">mężczyzna</label>
-        <input type="radio" name="male" id="female">
-        <br>
-        <br>
-        <label for="email">Email</label>
-        <br>
-        <input type="text " name="email" id="email ">
+        <label>Email <input type="email" name="email"></label>
         <br>
 
-        <label for="name ">Numer telefonu</label>
         <br>
-        <input type="text " name="numer-telefonu " id="numer-telefonu ">
-        <br>
-        <label for="name ">Wiadomość</label>
-        <br>
-        <textarea maxlength="500 "></textarea>
 
-        <input type="submit " value="Wyslij ">
+        <label>Numer telefonu<input type="text" name="numer-telefonu"></label>
+        <br>
+
+        <br>
+        <label>Wiadomość<textarea maxlength="1000"></textarea></label>
+        <br>
+
+
+        <input type="submit" value="Wyslij ">
     </form>
 </body>
 
