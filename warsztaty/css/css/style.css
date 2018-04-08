@@ -1,0 +1,33 @@
+body {
+    background-color: aqua;
+}
+
+#pierwszy {
+    background-color: green;
+    height: 500px;
+    width: 500px;
+    border: white solid 7px;
+    border-radius: 0px 30px 0px 30px;
+}
+
+#kwadrat1 {
+    background-color: red;
+    height: 250px;
+    width: 250px;
+    position: relative;
+    top: 250px;
+    border-radius: 0px 0px 0px 20px;
+}
+
+#kwadrat2 {
+    background-color: blue;
+    height: 250px;
+    width: 250px;
+    position: relative;
+    bottom: 250px;
+    left: 250px;
+    border-radius: 0px 20px 0px 0px;
+
+
+
+}

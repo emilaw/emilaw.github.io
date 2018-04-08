@@ -1,0 +1,66 @@
+body {
+    text-align: center;
+    margin: 0;
+    font-family: serif;
+
+}
+
+nav#menu {
+    margin: 0;
+    width: 100%;
+    background-color: black;
+}
+
+ul,
+li {
+    display: inline-block;
+    margin: 0;
+    text-decoration: none;
+    padding: 15px;
+
+}
+
+a {
+    color: white;
+    width: 100%;
+    text-decoration: none;
+}
+
+header#header {
+    position: relative;
+}
+
+header#header > img {
+    width: 100%;
+}
+
+header#header > h1 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+#about {
+    background-color: white;
+    color: black;
+    font-size: 12px;
+}
+
+
+footer {
+    background-color: black;
+    color: white;
+    font-size: 12px;
+
+
+}
+
+address#contact-content {
+    font-style: normal;
+    padding-top: 5px;
+}
