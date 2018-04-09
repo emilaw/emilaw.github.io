@@ -11,34 +11,34 @@
         <h1>Formularz zgłoszenia udziału w szkoleniu</h1>
         <p id="oznaczenie-pola-obowiązkowego">* pola obowiązkowe</p>
         <br>
-        <label for="imie">imię *</label>
+        <label for="name">imię *</label>
         <br>
-        <input type="text" id="imie" required>
+        <input type="name" id="name" required>
 
         <br>
         <br>
-        <label for="nazwisko">nazwisko *</label>
+        <label for="surname">nazwisko *</label>
         <br>
-        <input type="text" id="nazwisko" required>
-        <br>
-
-        <br>
-        <label for="mail">adres email *</label>
-        <br>
-        <input type="text" id="mail" required>
+        <input type="surname" id="surname" required>
         <br>
 
         <br>
-        <label for="telefon">nr telefonu *</label>
+        <label for="email">adres email *</label>
         <br>
-        <input type="text" id="telefon" required>
+        <input type="email" id="email" required>
+        <br>
+
+        <br>
+        <label for="tel">nr telefonu *</label>
+        <br>
+        <input type="tel" id="tel" required>
         <br>
 
         <br>
 
         <label for="lista-miasta">wybierz lokalizację: *</label>
         <br>
-        <select name="miasto" id="lista-miasta" required>
+        <select id="lista-miasta" required>
             <option value="">wybierz miasto</option>
             <option value="miasto">Kraków</option>
             <option value="miasto2">Warszawa</option>
@@ -53,7 +53,7 @@
 
         <label for="wiadomosc">Treść wiadomości:</label>
         <br>
-        <textarea name="wiadomosc" id="wiadomosc" cols="42" rows="10"></textarea>
+        <textarea name="wiadomość" id="wiadomosc" cols="42" rows="10"></textarea>
         <br>
 
         <input type="submit" value="Wyślij formularz">
