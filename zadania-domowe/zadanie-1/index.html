@@ -11,15 +11,15 @@
         <h1>Formularz zgłoszenia udziału w szkoleniu</h1>
         <p id="oznaczenie-pola-obowiązkowego">* pola obowiązkowe</p>
         <br>
-        <label for="name">imię *</label>
+        <label>imię *</label>
         <br>
-        <input type="name" id="name" required>
+        <input type="text" id="name" required>
+        <br>
 
         <br>
+        <label>nazwisko *</label>
         <br>
-        <label for="surname">nazwisko *</label>
-        <br>
-        <input type="surname" id="surname" required>
+        <input type="text" id="surname" required>
         <br>
 
         <br>
@@ -40,17 +40,17 @@
         <br>
         <select id="lista-miasta" required>
             <option value="">wybierz miasto</option>
-            <option value="miasto">Kraków</option>
-            <option value="miasto2">Warszawa</option>
-            <option value="miasto3">Gdańsk</option>
+            <option value="Kraków">Kraków</option>
+            <option value="Warszawa">Warszawa</option>
+            <option value="Gdańsk">Gdańsk</option>
         </select>
         <br>
-        <br>
 
+        <br>
         <label><input type="checkbox" required>Wyrażam zgodę na przetwarzanie danych osobowych *</label>
         <br>
-        <br>
 
+        <br>
         <label for="wiadomosc">Treść wiadomości:</label>
         <br>
         <textarea name="wiadomość" id="wiadomosc" cols="42" rows="10"></textarea>
