@@ -7,36 +7,31 @@
 </head>
 
 <body>
+
     <form action="https://formspree.io/emilaw_23@o2.pl" method="post">
         <h1>Formularz zgłoszenia udziału w szkoleniu</h1>
-        <p id="oznaczenie-pola-obowiązkowego">* pola obowiązkowe</p>
         <br>
-        <label>imię *</label>
+        <label for="name">imię:</label>
         <br>
-        <input type="text" id="name" required>
+        <input type="text" name="name" id="name" required>
         <br>
-
         <br>
-        <label>nazwisko *</label>
+        <label for="surname">nazwisko:</label>
         <br>
-        <input type="text" id="surname" required>
+        <input type="text" name="surname" id="surname" required>
         <br>
-
         <br>
-        <label for="email">adres email *</label>
+        <label for="email">adres email:</label>
         <br>
-        <input type="email" id="email" required>
+        <input type="email" name="email" id="email" required>
         <br>
-
         <br>
-        <label for="tel">nr telefonu *</label>
+        <label for="tel">nr telefonu:</label>
         <br>
-        <input type="tel" id="tel" required>
+        <input type="tel" name="tel" id="tel" required>
         <br>
-
         <br>
-
-        <label for="lista-miasta">wybierz lokalizację: *</label>
+        <label for="lista-miasta">wybierz lokalizację:</label>
         <br>
         <select id="lista-miasta" required>
             <option value="">wybierz miasto</option>
@@ -45,17 +40,21 @@
             <option value="Gdańsk">Gdańsk</option>
         </select>
         <br>
-
+        <br>
+        <label for="plec">Wybierz płeć:</label>
+        <br>
+        <label><input type="radio" name="plec" value="kobieta">kobieta</label>
+        <br>
+        <label><input type="radio" name="plec" value="mężczyzna">mężczyzna</label>
+        <br>
         <br>
         <label><input type="checkbox" required>Wyrażam zgodę na przetwarzanie danych osobowych *</label>
         <br>
-
         <br>
         <label for="wiadomosc">Treść wiadomości:</label>
         <br>
         <textarea name="wiadomość" id="wiadomosc" cols="42" rows="10"></textarea>
         <br>
-
         <input type="submit" value="Wyślij formularz">
     </form>
 </body>
