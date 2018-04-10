@@ -1,0 +1,118 @@
+#primary {
+    width: 320px;
+    height: 320px;
+}
+
+div.kwadrat {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+}
+
+
+div.kolo {
+    width: 50%;
+    height: 50%;
+    position: relative;
+    top: 25px;
+    left: 25px;
+    border-radius: 45px;
+    border: 1px solid;
+    border-color: black;
+}
+
+
+#red {
+    background-color: red;
+}
+
+#red > .kolo {
+    background-color: pink;
+}
+
+
+#blue {
+    background-color: blue;
+    position: relative;
+    left: 105px;
+    bottom: 105px;
+}
+
+#blue > .kolo {
+    background-color: gray;
+}
+
+#green {
+    background-color: green;
+    position: relative;
+    left: 210px;
+    bottom: 210px;
+}
+
+#green > .kolo {
+    background-color: blueviolet;
+}
+
+#yellow {
+    background-color: yellow;
+    position: relative;
+    bottom: 212px;
+}
+
+#yellow > .kolo {
+    background-color: green;
+}
+
+#black {
+    background-color: black;
+    position: relative;
+    left: 105px;
+    bottom: 315px;
+}
+
+#black > .kolo {
+    background-color: red;
+}
+
+#orange {
+    background-color: darkorange;
+    position: relative;
+    left: 210px;
+    bottom: 420px;
+}
+
+#orange > .kolo {
+    background-color: blue;
+}
+
+#violet {
+    background-color: blueviolet;
+    position: relative;
+    bottom: 420px;
+}
+
+#violet > .kolo {
+    background-color: orange;
+}
+
+#gray {
+    background-color: gray;
+    position: relative;
+    left: 105px;
+    bottom: 525px;
+}
+
+#gray > .kolo {
+    background-color: yellow;
+}
+
+#pink {
+    background-color: lightpink;
+    position: relative;
+    left: 210px;
+    bottom: 630px;
+}
+
+#pink > .kolo {
+    background-color: black;
+}
