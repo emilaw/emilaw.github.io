@@ -16,7 +16,7 @@
 
         <!--Customer info-->
         <fieldset>
-            <legend id="customer-info">Customer Info</legend>
+            <legend id="customer-info" name="Customer info">Customer Info</legend>
             <label class="customer-info">Name: <input type="text" id="name" name="Name" class="pole" placeholder="Enter your name" required autofocus></label>
             <br>
             <br>
@@ -30,9 +30,9 @@
 
         <!--Books info-->
         <fieldset>
-            <legend id="books">Books</legend>
+            <legend id="books" name="Books">Books</legend>
             <br>
-            <input list="books-list" class="pole-books">
+            <input list="books-list" name="Books" class="pole-books">
             <datalist id="books-list">
                 <option value="książka A">
                 <option value="książka B">
@@ -40,7 +40,7 @@
                 <option value="książka D">
                 <option value="książka E">
             </datalist>
-            <label class="books">Quantify (Maximum 5): <input type="number" id="number" min="1" max="5"></label>
+            <label name="Quantify" class="books">Quantify (Maximum 5): <input type="number" id="number" min="1" max="5"></label>
             <br>
         </fieldset>
         <input type="submit" value="Submit">
