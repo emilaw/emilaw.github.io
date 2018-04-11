@@ -1,0 +1,43 @@
+body {
+    background-color: aliceblue;
+    font-family: serif;
+}
+
+h1 {
+    color: blue;
+    font-size: 25px;
+}
+
+h3 {
+    color: darkviolet;
+    opacity: 0.5;
+    font-style: italic;
+    font-size: 15px;
+}
+
+.customer-info {
+    margin-left: 100px;
+}
+
+
+.pole {
+    position: relative;
+    left: 5px;
+    width: 500px;
+}
+
+
+.pole-books {
+    width: 500px;
+    position: relative;
+    left: 100px;
+}
+
+.books {
+    position: relative;
+    left: 100px;
+}
+
+#number {
+    width: 120px;
+}
