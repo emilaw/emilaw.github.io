@@ -1,0 +1,29 @@
+body {
+    background-color: aliceblue;
+}
+
+#obraz {
+    width: 650px;
+    height: 350px;
+    background: url('../img/jezioro.jpg');
+    position: absolute;
+    left: 30%;
+    top: 30%;
+    outline: 5px solid white;
+    border: 5px solid white;
+    transition-duration: 4s;
+
+
+}
+
+#obraz::before {
+    content: '';
+}
+
+#obraz::after {
+    content: '';
+}
+
+#obraz:hover {
+    outline: 5px solid black;
+}
