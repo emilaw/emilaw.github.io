@@ -1,0 +1,40 @@
+#primary {
+    width: 350px;
+    height: 450px;
+    background-color: green;
+    border-color: white;
+    border-style: solid;
+    position: relative;
+}
+
+.kwadrat {
+    width: 80px;
+    height: 80px;
+    background-color: orange;
+}
+
+.kolo {
+    width: 35px;
+    height: 35px;
+    background-color: blue;
+    border-radius: 45px;
+}
+
+.prawy {
+    position: absolute;
+    right: 0;
+}
+
+.lewy {
+    position: absolute;
+}
+
+.gorny {
+    position: absolute;
+    top: 0;
+}
+
+.dolny {
+    position: absolute;
+    bottom: 0;
+}
