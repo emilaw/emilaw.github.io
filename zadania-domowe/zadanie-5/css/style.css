@@ -1,6 +1,8 @@
-body {
-    background-color: aliceblue;
+div {
+    transition: all 4s linear;
+
 }
+
 
 #obraz {
     width: 650px;
@@ -9,21 +11,30 @@ body {
     position: absolute;
     left: 30%;
     top: 30%;
-    outline: 5px solid white;
+    outline: 6px solid white;
     border: 5px solid white;
-    transition-duration: 4s;
-
-
-}
-
-#obraz::before {
-    content: '';
-}
-
-#obraz::after {
-    content: '';
 }
 
 #obraz:hover {
-    outline: 5px solid black;
+    outline: 6px solid black;
+}
+
+#napis {
+    position: relative;
+    top: 40%;
+    font-size: 20px;
+    width: 102%;
+    height: 10%;
+    background-color: black;
+    opacity: 0;
+    text-align: center;
+    color: white;
+    margin-left: -1%;
+    margin-right: 101%;
+}
+
+#napis:hover {
+    opacity: 0.85;
+    font-size: 55px;
+    height: 18%;
 }
