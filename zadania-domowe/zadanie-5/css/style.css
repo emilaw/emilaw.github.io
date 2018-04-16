@@ -1,17 +1,14 @@
-div {
+* {
     transition: all 4s linear;
-
 }
+
 
 
 #obraz {
     width: 650px;
     height: 350px;
     background: url('../img/jezioro.jpg');
-    position: absolute;
-    left: 30%;
-    top: 30%;
-    outline: 6px solid white;
+    padding: 10px red;
     border: 5px solid white;
 }
 
@@ -38,3 +35,5 @@ div {
     font-size: 55px;
     height: 18%;
 }
+
+

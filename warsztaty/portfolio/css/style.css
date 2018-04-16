@@ -1,0 +1,111 @@
+    /*GENERAL SETTINGS*/
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Lato', sans-serif;
+        color: #291f1a;
+        margin: 0;
+        padding: 0;
+    }
+
+    span {
+        color: greenyellow;
+        text-align: center;
+    }
+
+    .box {
+        width: 100%;
+        height: auto;
+        display: inline-block;
+        padding: 20px;
+        text-align: justify;
+    }
+
+    h2,
+    article,
+    p {
+        text-align: center;
+    }
+
+
+
+    /*NAVIGATION*/
+
+    nav {
+        position: fixed;
+        top: 0;
+        background-color: white;
+        width: 100%;
+        z-index: 20;
+    }
+
+    nav > ul {
+        float: right;
+    }
+
+    ul > li {
+        display: inline-block;
+    }
+
+    ul > li > a {
+        padding: 25px;
+        text-decoration: none;
+        color: black;
+        transition: color;
+    }
+
+    ul > li > a:hover {
+        color: greenyellow;
+    }
+
+
+
+
+    /*HEADER*/
+
+    #main-header {
+        height: 600px;
+        background-image: url("../img/header-background.jpg");
+        background-position: top;
+        background-size: cover;
+        color: #fff;
+    }
+
+    #main-header .header-content {
+        text-align: center;
+        position: relative;
+        top: 48%;
+        transform: translate(50% 50%);
+    }
+
+
+
+
+    /*ABOUT SECTION*/
+
+    #about {
+        background-color: #f9fcfe;
+        overflow: hidden;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+    }
+
+    #about img {
+        width: 200px;
+        height: auto;
+        float: left;
+        border: 10px solid white;
+        border-radius: 20px;
+        margin-right: 20px;
+    }
+
+
+
+
+    /*SKILLS SECTION*/
+
+    figure.icons {
+        display: inline-block;
+    }
