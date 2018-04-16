@@ -1,0 +1,85 @@
+/*screen > 1170 px*/
+
+@media(min-width:1171px) {
+    #my-header {
+        background-image: url("../img/man-1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+    }
+
+    #header-content h1,
+    #header-content h2 {
+        color: white;
+        position: relative;
+        left: 10%;
+    }
+
+    #header-content h1 {
+        margin-top: 3%;
+    }
+
+    #header-content h2 {
+        margin-top: 45%;
+    }
+}
+
+
+
+
+/*screen < 1170 px*/
+
+@media(max-width:1170px) {
+    #my-header {
+        background-image: url("../img/man-2.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        max-height: 800px;
+    }
+
+    #header-content h1,
+    #header-content h2 {
+        color: white;
+        position: relative;
+        left: 110%;
+    }
+
+    #header-content h1 {
+        margin-top: 3%;
+    }
+
+    #header-content h2 {
+        margin-top: 25%;
+    }
+}
+
+
+
+
+/*screen < 992 px*/
+
+@media(max-width:992px) {
+    #my-header {
+        background-image: url("../img/man-1.jpg");
+        max-height: 700px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        text-align: center;
+    }
+
+    #header-content h1,
+    #header-content h2 {
+        color: black;
+        position: relative;
+        left: 50%;
+    }
+
+    #header-content h1 {
+        margin-top: 3%;
+
+    }
+
+    #header-content h2 {
+        margin-top: 145%;
+    }
+}
