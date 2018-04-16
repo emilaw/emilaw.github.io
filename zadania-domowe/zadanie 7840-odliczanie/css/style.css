@@ -1,0 +1,18 @@
+div {
+    background: black;
+    width: 700px;
+    height: 120px;
+    font-family: sans-serif;
+    font-size: 100px;
+    color: black;
+    text-align: center;
+    position: relative;
+}
+
+.count {
+    overflow: hidden;
+}
+
+.nr {
+    position: absolute;
+}

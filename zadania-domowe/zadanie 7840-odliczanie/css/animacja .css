@@ -1,0 +1,51 @@
+div.nr {
+    position: relative;
+    animation-name: count;
+    animation-delay: 1s;
+    animation-duration: 11s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+
+
+
+@keyframes count {
+    0% {
+        background-color: bisque;
+
+
+    }
+    10% {
+        background-color: greenyellow;
+
+
+    }
+    20% {
+        background-color: orange;
+    }
+    30% {
+        background-color: fuchsia;
+    }
+    40% {
+        background-color: gainsboro;
+    }
+    50% {
+        background-color: cornsilk;
+    }
+    60% {
+        background-color: azure;
+    }
+    70% {
+        background-color: gold;
+    }
+    80% {
+        background-color: honeydew;
+    }
+    90% {
+        background-color: navajowhite;
+    }
+    100% {
+        background-color: pink;
+    }
+}
