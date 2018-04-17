@@ -2,50 +2,65 @@ div.nr {
     position: relative;
     animation-name: count;
     animation-delay: 1s;
-    animation-duration: 11s;
-    animation-fill-mode: forwards;
+    animation-duration: 14s;
+    animation-fill-mode: backwards;
+    display: block;
     animation-iteration-count: infinite;
+    animation-timing-function: step-end;
+
+
 }
 
 
 
 
 @keyframes count {
+
     0% {
-        background-color: bisque;
-
-
+        transform: translateY(0%);
     }
-    10% {
-        background-color: greenyellow;
+    8% {
+        transform: translateY(-100%);
+    }
 
+    16% {
+        transform: translateY(-200%);
+    }
 
+    24% {
+        transform: translateY(-300%);
     }
-    20% {
-        background-color: orange;
+
+    32% {
+        transform: translateY(-400%);
     }
-    30% {
-        background-color: fuchsia;
-    }
+
     40% {
-        background-color: gainsboro;
+        transform: translateY(-500%);
     }
-    50% {
-        background-color: cornsilk;
+
+    48% {
+        transform: translateY(-600%);
     }
-    60% {
-        background-color: azure;
+
+    56% {
+        transform: translateY(-700%);
     }
-    70% {
-        background-color: gold;
+
+    64% {
+        transform: translateY(-800%);
     }
+
+    72% {
+        transform: translateY(-900%);
+    }
+
     80% {
-        background-color: honeydew;
+        transform: translateY(-1000%);
     }
-    90% {
-        background-color: navajowhite;
+    88% {
+        transform: translateY(-1100%);
     }
     100% {
-        background-color: pink;
+        transform: translateY(0%);
     }
-}
