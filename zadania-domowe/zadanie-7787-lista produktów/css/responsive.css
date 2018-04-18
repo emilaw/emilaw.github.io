@@ -3,13 +3,11 @@
 }
 
 
-
 @media(min-width: 993px) {
     .product {
         width: 22.7%;
     }
 }
-
 
 
 @media(max-width: 992px) {
@@ -24,7 +22,6 @@
         width: 47.6%;
     }
 }
-
 
 
 @media(max-width: 480px) {
