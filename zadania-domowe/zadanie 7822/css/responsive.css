@@ -36,6 +36,7 @@
         background-repeat: no-repeat;
         max-height: 70vh;
         background-size: cover;
+        margin: 0;
 
     }
 
@@ -43,7 +44,7 @@
     #header-content h2 {
         color: white;
         position: relative;
-        left: 110%;
+        left: 105%;
     }
 
     #header-content h1 {
@@ -53,6 +54,7 @@
     #header-content h2 {
         margin-top: 20%;
     }
+
 }
 
 

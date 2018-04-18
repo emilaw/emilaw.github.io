@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    overflow: hidden;
 }
 
 #my-header {
@@ -8,8 +9,10 @@ body {
     font-family: verdana;
     background-position: top;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     position: absolute;
+    padding: 0;
+    margin: 0;
 }
 
 
