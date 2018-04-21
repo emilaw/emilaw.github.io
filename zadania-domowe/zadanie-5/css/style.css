@@ -3,7 +3,7 @@
 }
 
 .animacja1 {
-    position: relative;
+    position: absolute;
     top: 40%;
     left: -5px;
     font-size: 0px;
@@ -23,7 +23,7 @@
     background-position: center;
     border: 5px solid white;
     animation-name: obraz;
-    position: absolute;
+    position: relative;
     left: 30%;
     top: 30%;
     ;
