@@ -65,10 +65,11 @@
     /*HEADER*/
 
     #main-header {
-        height: 600px;
+        height: 100vh;
         background-image: url("../img/header-background.jpg");
         background-position: top;
         background-size: cover;
+        background-repeat: no-repeat;
         color: #fff;
     }
 
@@ -261,8 +262,8 @@
 
     #my-footer #under-footer p {
         position: relative;
-        margin-top: 0px;
-        left: 2%;
+        margin: 0px;
+        padding-left: 40px;
         font-size: 0.8em;
 
     }
