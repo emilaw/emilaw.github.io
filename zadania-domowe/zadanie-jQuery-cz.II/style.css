@@ -1,0 +1,19 @@
+#animation {
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    border: 5px solid black;
+}
+
+p {
+    background-color: chartreuse;
+}
+
+
+h1 {
+    background-color: skyblue;
+}
+
+h2 {
+    background-color: pink;
+}
