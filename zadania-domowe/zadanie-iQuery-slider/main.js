@@ -7,7 +7,9 @@ $(function () {
     var slideWidth = 1000 / slideCount;
     var slideIndex = 0;
 
-    slideShow.css('width', 1008 slideCount + '%');
+    slideShow.css({
+        width: '100 %' + slideCount + '%'
+    });
     slideShow.find('.single-slide').each(function (index) {
 
         $(this).css({
@@ -30,7 +32,7 @@ $(function () {
     }
 
     var slideCaption = $(".slide-caption");
-    var marginLeft = newSlideIndex * -100;
+    var marginLeft = newSlideIndex - 100;
     slideCaption.hide();
     slideShow.animate({
             'margin-left': marginLeft + '%'

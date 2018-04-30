@@ -1,22 +1,17 @@
 'use strict';
 
-
+var tab = [1, 2, 3, 4, 5, 6];
 
 function sumaIloczyn(tab) {
-    var tab = [1, 2, 3, 4, 5, 6];
+
     var suma = 0;
-    for (var i = 0; i <= tab.length; i++) {
-        suma += i;
+    var iloczyn = 1;
+    for (var i = 0; i < tab.length; i++) {
+        suma += tab[i];
+        iloczyn *= tab[i];
     }
     console.log(suma);
-
-
-    var iloczyn = 1;
-    for (var j = 1; j <= tab.length; j++) {
-        iloczyn *= j;
-
-    }
     console.log(iloczyn);
 
 }
-sumaIloczyn();
+sumaIloczyn(tab);

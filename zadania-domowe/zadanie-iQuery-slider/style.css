@@ -6,14 +6,14 @@ body {
 
 
 * {
-    background-size: cover;
+
     box-sizing: border-box;
 }
 
 #slider {
     position: relative;
     overflow: hidden;
-    height: 600px;
+    height: 100vh;
 }
 
 .slide-show {
@@ -28,8 +28,8 @@ body {
 }
 
 img {
-    height: 100%;
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
 }
 
 .slide-caption {
@@ -37,6 +37,7 @@ img {
     top: 50%;
     transform: translateY(-50%);
     left: 0;
+    right: 0;
     margin: 0 auto;
     text-align: center;
     z-index: 5;
@@ -48,10 +49,24 @@ img {
 
 .slider-arrows button {
     position: absolute;
-    transform: translateY(-50%);
+    top: 50%;
+
+}
+
+.prev-slide {
+    position: absolute;
+    left: 0;
+    z-index: 6;
+
 }
 
 
+.next-slide {
+    position: absolute;
+    right: 0;
+    z-index: 6;
+
+}
 
 .fa {
     font-size: 30px;
@@ -63,14 +78,4 @@ img {
     top: 50%;
     transform: translateY(-50%);
     z-index: 6;
-}
-
-.prev-slide {
-    left: 0;
-
-}
-
-.next.slide {
-    right: 0;
-
 }

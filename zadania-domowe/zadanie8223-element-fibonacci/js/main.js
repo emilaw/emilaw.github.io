@@ -15,10 +15,10 @@ function fibon(n) {
     var PoprzedniaWartosc = 1;
     for (var i = 2; i < n; i++) {
         var tempObecnaWartosc = ObecnaWartosc;
-        var ObecnaWartosc = ObecnaWartosc + PoprzedniaWartosc;
-        var PoprzedniaWartosc = tempObecnaWartosc;
+        ObecnaWartosc = ObecnaWartosc + PoprzedniaWartosc;
+        PoprzedniaWartosc = tempObecnaWartosc;
     }
     console.log(ObecnaWartosc);
 }
 
-fibon(3);
+fibon(10);

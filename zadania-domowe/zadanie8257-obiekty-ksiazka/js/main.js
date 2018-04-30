@@ -9,9 +9,9 @@ function Ksiazka(tytul, autor, przeczytana) {
 
     this.opiszKsiazke = function () {
         if (this.przeczytana === false) {
-            return "Książka ma tytuł " + this.tytul + ", autorem jest " + this.autor + " i została przeczytana";
-        } else if (przeczytana === true) {
             return "Książka ma tytuł " + this.tytul + ", autorem jest " + this.autor + " i nie została przeczytana";
+        } else if (przeczytana === true) {
+            return "Książka ma tytuł " + this.tytul + ", autorem jest " + this.autor + " i została przeczytana";
         }
     }
 }
