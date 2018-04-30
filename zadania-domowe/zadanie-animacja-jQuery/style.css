@@ -1,0 +1,15 @@
+#animation {
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    position: relative;
+    top: 15px;
+}
+
+#napis {
+    position: absolute;
+    top: 25%;
+    font-size: 1em;
+    color: white;
+    text-align: center;
+}

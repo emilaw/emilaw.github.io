@@ -81,7 +81,14 @@ $(function () {
 $('h1').addClass('blueClass');
 
 
-//
+// $(function colorChange() {
+
+$("#animation")
+    .css(
+        'background-color',
+        'blue')
+})
+colorChange()
 //znajdz element p, który jest drugi na stronie(korzystając z eq())
 //i zmien mu background - color na zielony
 //
