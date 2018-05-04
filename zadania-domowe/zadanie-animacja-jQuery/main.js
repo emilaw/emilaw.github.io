@@ -12,13 +12,15 @@ $(function () {
             height: '100px'
         }, 3000);
 
+
         div.queue(function () {
-            div.css(
-                'background-color', 'blue'
-            );
+            div.css({
+                'background-color': 'blue',
+                'transition': '5s'
+            });
             div.dequeue();
         });
 
-        $('#napis').delay(4300).fadeIn();
+        $('#napis').delay(9000).fadeIn();
     })
 })

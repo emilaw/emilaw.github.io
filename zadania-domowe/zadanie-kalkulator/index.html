@@ -13,41 +13,39 @@
 
     <div id="calculator">
 
-        <div id="wynik" value="" class="line">
-
-        </div>
+        <input id="wynik" value="" class="line">
         <br>
         <div id="line2" class="line ">
-            <button id="del" value="C" class="big">Del</button>
-            <button id="procent" value="%" class="small gray">%</button>
-            <button id="plus" value="+" class="small gray">+</button>
+            <button id="del" onclick="del()" class="big">Del</button>
+            <button id="procent" onclick="procent('%')" class="small gray">%</button>
+            <button id="plus" onclick="take('+')" class="small gray">+</button>
         </div>
 
         <div id="line3" class="line">
-            <button id="siedem" value="7" class="small">7</button>
-            <button id="osiem" value="8" class="small">8</button>
-            <button id="dziewiec" value="9" class="small">9</button>
-            <button id="minus" value="-" class="small gray">-</button>
+            <button id="siedem" onclick="take(7)" class="small">7</button>
+            <button id="osiem" onclick="take(8)" class="small">8</button>
+            <button id="dziewiec" onclick="take(9)" class="small">9</button>
+            <button id="minus" onclick="take('-')" class="small gray">-</button>
         </div>
 
         <div id="line4" class="line">
-            <button id="cztery" value="4" class="small">4</button>
-            <button id="piec" value="5" class="small">5</button>
-            <button id="szesc" value="6" class="small">6</button>
-            <button id="mnozenie" value="*" class="small gray">x</button>
+            <button id="cztery" onclick="take(4)" class="small">4</button>
+            <button id="piec" onclick="take(5)" class="small">5</button>
+            <button id="szesc" onclick="take(6)" class="small">6</button>
+            <button id="mnozenie" onclick="take('*')" class="small gray">x</button>
         </div>
 
         <div id="line5" class="line">
-            <button id="jeden" value="1" class="small">1</button>
-            <button id="dwa" value="2" class="small">2</button>
-            <button id="trzy" value="3" class="small">3</button>
-            <button id="dzielenie" value="/" class="small gray">/</button>
+            <button id="jeden" onclick="take(1)" class="small">1</button>
+            <button id="dwa" onclick="take(2)" class="small">2</button>
+            <button id="trzy" onclick="take(3)" class="small">3</button>
+            <button id="dzielenie" onclick="take('/')" class="small gray">/</button>
         </div>
 
         <div id="line6" class="line">
-            <button id="zero" value="0" class="big">0</button>
-            <button id="przecinek" value="." class="small">.</button>
-            <button id="rowna-sie" value="=" class="small green">=</button>
+            <button id="zero" onclick="take(0)" class="big">0</button>
+            <button id="przecinek" onclick="take('.')" class="small">.</button>
+            <button id="rowna-sie" onclick="count()" class="small green">=</button>
         </div>
 
     </div>
