@@ -1,0 +1,14 @@
+#btn {
+    background: blue;
+    color: white;
+}
+
+
+#dane-programisty {
+    position: absolute;
+    background-color: azure;
+    width: 80%;
+    height: 80px;
+    border: 1px solid black;
+    margin: 20px;
+}
