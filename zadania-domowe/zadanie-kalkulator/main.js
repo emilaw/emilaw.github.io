@@ -10,7 +10,10 @@ function take(x) {
 
 }
 
-function procent() {
+function procent(liczba, licznik) {
+    var wynik = liczba * (licznik / 100);
+    console.log(wynik);
+    return wynik;
 
 
 }
@@ -25,6 +28,6 @@ function del() {
 }
 
 take();
-procent();
+procent(liczba, 10);
 count();
 del();

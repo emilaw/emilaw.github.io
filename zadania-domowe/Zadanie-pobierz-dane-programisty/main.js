@@ -1,5 +1,10 @@
   'use strict';
 
+  var div = document.createElement("div");
+  div.id = "dane-programisty";
+  document.body.appendChild(div);
+
+
 
   $(function () {
       $('#btn').click(function () {
