@@ -1,0 +1,19 @@
+/*
+  ul > li {
+      ;
+  }
+
+  ul > li > a {
+      ;
+
+      @media (max-width: 480px) {
+          .header-content {
+              width: 45%;
+          }
+          #main-header {
+              height: 50vh;
+          }
+          #main-header .header-content {
+              top: 60%;
+          }
+      }*/

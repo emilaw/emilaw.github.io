@@ -9,14 +9,18 @@
 
 
   //ROZWIĄZANIE DRUGIE Z FUNKCJĄ
+
+  var wynik = Boolean;
+
   function sprawdz(liczba) {
       var liczba = liczba % 2;
       liczba % 2 == 0;
       if (liczba == true) {
-          console.log("liczba jest nieparzysta");
+          console.log(wynik = false);
       } else {
-          console.log("liczba jest parzysta");
+          console.log(wynik = true);
       };
+      return wynik;
   };
 
-  sprawdz(21);
+  sprawdz(24);

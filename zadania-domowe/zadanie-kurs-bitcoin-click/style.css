@@ -1,0 +1,53 @@
+#btn {
+    background: lightgreen;
+    color: white;
+    border: 2px solid darkgreen;
+    font-size: 20px;
+    height: 40px;
+    width: 250px;
+}
+
+
+div {
+    position: relative;
+    background: green;
+    height: 40px;
+    width: 150px;
+    text-align: center;
+    display: inline-block;
+    line-height: 40px;
+
+
+}
+
+div.stan {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: yellow;
+    line-height: 40px;
+}
+
+.fas {
+    position: relative;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 10px;
+
+}
+
+#down {
+    color: red;
+}
+
+
+#up {
+    color: green;
+}
+
+
+#brak {
+    color: blue;
+}

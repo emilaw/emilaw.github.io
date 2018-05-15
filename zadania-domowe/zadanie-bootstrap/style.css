@@ -1,0 +1,21 @@
+/*
+.color {
+    height: 150px;
+    background-color: aqua;
+}
+
+.color:nth-of-type(2n) {
+    background-color: yellowgreen;
+}
+
+.color:nth-of-type(3n) {
+    background-color: blueviolet;
+}*/
+
+.my-color {
+    background: #ccc;
+}
+
+.container {
+    outline: 1px solid #000;
+}

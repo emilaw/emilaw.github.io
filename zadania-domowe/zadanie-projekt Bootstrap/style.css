@@ -1,0 +1,289 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*header*/
+
+#header-text {
+    position: relative;
+    top: 45vh;
+    left: 35vw;
+}
+
+.my-header h1,
+.my-header h2 {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+
+.my-header h2 {
+    font-size: 30px;
+    font-style: italic;
+    text-align: center;
+}
+
+
+.my-header {
+    background-image: url(img/header/pictures_on_the_wall.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-color: pink;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    color: #fff;
+}
+
+
+/*nawigacja*/
+
+#main-nav {
+    height: 5vh;
+    transition: all 0.5s;
+
+}
+
+#main-nav a {
+    color: #fff;
+}
+
+.navbar-brand {
+    font-style: italic;
+}
+
+.scroll {
+    background-color: rgba(14, 216, 214, 0.7);
+}
+
+#main-nav a:hover {
+    color: #777;
+}
+
+
+/*sevices*/
+
+#header-text {
+    height: 90%;
+    text-align: center;
+}
+
+#services {
+    margin-top: 50px;
+    background-color: white;
+    text-align: center;
+}
+
+#services h4,
+#services p {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+.single-services i.fas {
+    color: white;
+    background-color: skyblue;
+    border-radius: 45px;
+    height: 80px;
+    width: 80px;
+    line-height: 80px;
+    transition: all 1s;
+}
+
+.single-services .fas:hover {
+    color: skyblue;
+    background-color: white;
+    border: 1px solid skyblue;
+    transform: rotate(360deg);
+}
+
+.portfolio {
+    background: #f7f7f7;
+}
+
+.content-portfolio {
+    width: 100%;
+    height: 1000px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+.content-portfolio h2,
+.content-portfolio p {
+    margin-top: 50px;
+}
+
+
+.content-portfolio figure {
+    height: 250px;
+    background-blend-mode: multiply;
+    margin: 60px;
+    background-repeat: no-repeat;
+
+}
+
+.portfolio-item .portfolio-image .fas {
+    color: white;
+    line-height: 250px;
+}
+
+.content-portfolio #figure1 {
+    background-image: url("img/portfolio/box_of_cookies.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.content-portfolio #figure2 {
+    background-image: url("img/portfolio/chaotic_paint.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.content-portfolio #figure3 {
+    background-image: url("img/portfolio/chestnut_on_bracket.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.content-portfolio #figure4 {
+    background-image: url("img/portfolio/child_with_blue_paint.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.content-portfolio #figure5 {
+    background-image: url("img/portfolio/house_with_blue_doors.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.content-portfolio #figure6 {
+    background-image: url("img/portfolio/typing_on_laptop.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+
+.portfolio-image .overlay {
+    height: 250px;
+    width: 100%;
+    background-color: rgba(14, 216, 214, 0.7);
+    background-repeat: no-repeat;
+    opacity: 0;
+}
+
+.portfolio-image .overlay:hover {
+    opacity: 1;
+}
+
+
+/*Our team*/
+
+#team {
+    height: 500px;
+}
+
+#team .section-header {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.image-circle {
+    border-radius: 50%;
+    height: 50%;
+}
+
+#team .social-links {
+    width: 45px;
+    height: 45px;
+    background-color: white;
+    color: skyblue;
+    border: 1px solid skyblue;
+    border-radius: 45px;
+    display: inline-block;
+    text-align: center;
+    line-height: 60px;
+}
+
+#team .social-links:hover {
+    background-color: skyblue;
+    color: white;
+    border: 1px solid white;
+}
+
+#contact {
+    background: url("img/footer/world-map.jpg");
+    height: 500px;
+    color: white;
+    margin-top: 40px;
+    padding-top: 50px;
+}
+
+#contact .contact-form .contact-form-column {
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+#contact .contact-form .contact-form-column input,
+#contact .contact-form .contact-form-column textarea {
+    padding: 10px;
+    border-radius: 4px;
+}
+
+#contact .contact-form .contact-form-column textarea {
+    height: 100%;
+    width: 100%;
+}
+
+
+#contact input[type='submit'] {
+    background-color: skyblue;
+    border: 1px solid skyblue;
+    color: #fff;
+    margin-top: 30px;
+    transition: all 0.4s linear;
+    cursor: pointer;
+    width: 200px;
+    text-transform: uppercase;
+}
+
+#contact input[type='submit']:hover {
+    background-color: #fff;
+    color: skyblue;
+}
+
+#main-footer {
+    height: 50px;
+    width: 100%;
+    background: black;
+    text-align: center;
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+
+#main-footer .copyright i.fab {
+    height: 20px;
+    width: 20px;
+}
+
+#main-footer .social-links {
+    width: 30px;
+    height: 30px;
+    color: skyblue;
+    text-align: center;
+    line-height: 20px;
+    font-size: 1.6em;
+    line-height: 50px;
+}
+
+#main-footer .social-links:hover {
+    color: white;
+}
