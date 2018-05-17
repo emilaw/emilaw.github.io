@@ -1,18 +1,68 @@
   'use strict';
 
-
-
-
   $(function () {
-      $('#btn').click(function () {
+
+      var lastBuyValue = document.getElementById("kupno").innerHTML;
+      var lastSellValue = document.getElementById("sprzedaz").innerHTML;
+
+      $('#btn').on("click", function (e) {
           $.getJSON('https://blockchain.info/pl/ticker', function (json) {
               console.log(json);
-              $("#kupno").append(json.THB.buy).value;
-              $("#sprzedaz").append(json.THB.sell).value;
-              //              znak(e);
+
+              var currentBuyValue = $(json.THB.buy);
+              $("#kupno").empty();
+              $("#kupno").prepend(json.THB.buy).value;
+              showIconB();
+
+              var currentSellValue = $(json.THB.sell);
+              $("#sprzedaz").empty();
+              $("#sprzedaz").prepend(json.THB.sell).value;
+              showIconS();
+
+
+              function showIconB() {
+                  if (lastBuyValue > currentBuyValue) {
+                      console.log("red");
+                      $("#stan-kupno .fa-arrow-down").addClass("down");
+                  }
+                  if (lastBuyValue < currentBuyValue) {
+                      console.log("green");
+                      $("#stan-kupno .fa-arrow-up").addClass("up");
+                  } else {
+                      console.log("blue");
+                      $("#stan-kupno .fa-minus").addClass("brak");
+                  };
+              };
+
+
+              function showIconS() {
+                  if (lastSellValue > currentSellValue) {
+                      console.log("red");
+                      $("#stan-sprzedaz .fa-arrow-down").addClass("down");
+                  }
+                  if (lastSellValue < currentSellValue) {
+                      console.log("green");
+                      $("#stan-sprzedaz .fa-arrow-up").addClass("up");
+                  } else {
+                      console.log("blue");
+                      $("#stan-sprzedaz .fa-minus").addClass("brak");
+                  };
+              };
+
           });
       });
+
   });
+
+
+
+
+  //var currentBuyValue = $("#kupno").val();
+  //  console.log(lastBuyValue);
+  //  var currentSellValue = $("#sprzedaz").val();
+  //  console.log(lastSellValue);
+
+
 
 
   //  function znak(e) {

@@ -8,46 +8,59 @@
 }
 
 
-div {
+div#sprzedaz,
+div#kupno {
     position: relative;
-    background: green;
+    border-bottom: 1px solid black;
     height: 40px;
     width: 150px;
     text-align: center;
     display: inline-block;
-    line-height: 40px;
+    line-height: 70px;
 
 
 }
 
 div.stan {
+    position: relative;
     display: inline-block;
     width: 40px;
     height: 40px;
-    background: yellow;
+
     line-height: 40px;
 }
 
 .fas {
-    position: relative;
-    top: 10px;
+    position: absolute;
+    left: 5px;
+    top: 20px;
     width: 40px;
     height: 40px;
     font-size: 20px;
     line-height: 10px;
+    visibility: hidden;
+    text-align: center;
 
 }
 
-#down {
+.down {
     color: red;
+    position: absolute;
+    visibility: visible;
+
+
 }
 
 
-#up {
+.up {
     color: green;
+    position: absolute;
+    visibility: visible;
 }
 
 
-#brak {
+.brak {
     color: blue;
+    position: absolute;
+    visibility: visible;
 }
