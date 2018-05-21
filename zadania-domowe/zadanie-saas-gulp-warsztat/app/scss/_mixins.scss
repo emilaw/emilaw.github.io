@@ -2,15 +2,15 @@
     background-image: url("../img/background.png");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 490px;
-    padding-top: 10px;
+    height: 700px;
+    padding-top: 30px;
 
 }
 
 
 @mixin my-footer {
     background-color: $gray-color;
-    height: 180px;
+    height: auto;
     ;
 }
 

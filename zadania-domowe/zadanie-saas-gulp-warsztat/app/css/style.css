@@ -14,13 +14,15 @@ body {
   background-image: url("../img/background.png");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 490px;
-  padding-top: 10px;
-  span-font: "Open Sans", sans-serif; }
+  height: 700px;
+  padding-top: 30px; }
+  #contact .header-contact {
+    text-align: center;
+    span-font: "Open Sans", sans-serif; }
 
 #my-footer {
   background-color: #292929;
-  height: 180px; }
+  height: auto; }
 
 .fa-university {
   color: #ecd407; }
@@ -38,15 +40,15 @@ body {
   font-size: 0.8em; }
 
 #contact-form {
-  margin-top: 5px; }
+  margin-top: 40px; }
   #contact-form span {
     color: #ecd407; }
   #contact-form #my-form {
-    padding: 6px; }
+    padding: 20px; }
     #contact-form #my-form #form label {
       display: block; }
       #contact-form #my-form #form label input {
-        height: 38px;
+        height: 40px;
         width: 100%;
         color: black; }
         #contact-form #my-form #form label input:focus {
@@ -69,7 +71,7 @@ body {
         background-color: red; }
 
 #my-footer {
-  padding-top: 10px; }
+  padding-top: 20px; }
   #my-footer i {
     color: #ecd407; }
   #my-footer .contact {

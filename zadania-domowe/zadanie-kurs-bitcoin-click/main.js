@@ -15,10 +15,10 @@
           $.getJSON('https://blockchain.info/pl/ticker', function (json) {
               console.log(json);
 
-              var currentBuyValue = $("#kupno").prepend(json.THB.buy);
+              var currentBuyValue = $("#kupno").html(json.THB.buy);
               showIconB();
 
-              var currentSellValue = $("#sprzedaz").prepend(json.THB.sell);
+              var currentSellValue = $("#sprzedaz").html(json.THB.sell);
               showIconS();
 
 
