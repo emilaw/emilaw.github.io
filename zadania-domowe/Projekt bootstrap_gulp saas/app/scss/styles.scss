@@ -1,0 +1,224 @@
+@import "zmienne";
+@import "mixins";
+@import "general";
+
+
+.my-header {
+    @include background-header;
+    #header-text {
+        position: relative;
+        top: 45vh;
+        left: 35vw;
+    }
+
+    h2 {
+        font-size: 30px;
+        font-style: italic;
+        text-align: center;
+    }
+}
+
+#main-nav {
+    height: 5vh;
+    transition: all 0.5s;
+    a {
+        color: #fff;
+        &:hover {
+            color: #777;
+        }
+    }
+    .navbar-brand {
+        font-style: italic;
+    }
+}
+
+.scroll {
+    background-color: $rgba-color;
+}
+
+#header-text {
+    height: 90%;
+    text-align: center;
+}
+
+
+#services {
+    margin-top: 50px;
+    background-color: white;
+    text-align: center;
+    h4,
+    p {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}
+
+
+.single-services {
+    i.fas {
+        color: white;
+        background-color: $blue-color;
+        border-radius: 45px;
+        height: 80px;
+        width: 80px;
+        line-height: 80px;
+        transition: all 1s;
+        &:hover {
+            color: $blue-color;
+            background-color: white;
+            border: 1px solid $blue-color;
+            transform: rotate(360deg);
+        }
+    }
+}
+
+.portfolio {
+    background: $portfolio-background;
+}
+
+.content-portfolio {
+    @include content-portfolio;
+    h2,
+    p {
+        margin-top: 50px;
+    }
+    figure {
+        @include figure-background;
+    }
+
+    #figure1 {
+        background-image: url("../img/portfolio/box_of_cookies.jpg");
+        @include figure-pictures;
+    }
+
+    #figure2 {
+        background-image: url("../img/portfolio/chaotic_paint.jpg");
+        @include figure-pictures;
+    }
+    #figure3 {
+        background-image: url("../img/portfolio/chestnut_on_bracket.jpg");
+        @include figure-pictures;
+    }
+    #figure4 {
+        background-image: url("../img/portfolio/child_with_blue_paint.jpg");
+        @include figure-pictures;
+    }
+    #figure5 {
+        background-image: url("../img/portfolio/house_with_blue_doors.jpg");
+        @include figure-pictures;
+    }
+    #figure6 {
+        background-image: url("../img/portfolio/typing_on_laptop.jpg");
+        @include figure-pictures;
+    }
+}
+
+.portfolio-item {
+    .portfolio-image {
+        .fas {
+            color: white;
+            line-height: 250px;
+        }
+        .overlay {
+            height: 250px;
+            width: 100%;
+            background-color: $rgba-color;
+            background-repeat: no-repeat;
+            opacity: 0;
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+
+#team {
+    height: 500px;
+    .section-header {
+        margin-top: 50px;
+        text-align: center;
+    }
+    .social-links {
+        @include team-social-links;
+        &:hover {
+            background-color: $blue-color;
+            color: white;
+            border: 1px solid white;
+        }
+    }
+}
+
+.image-circle {
+    border-radius: 50%;
+    height: 50%;
+}
+
+
+#contact {
+    background: url("../img/footer/world-map.jpg");
+    height: 500px;
+    color: white;
+    margin-top: 40px;
+    padding-top: 50px;
+    .contact-form .contact-form-column {
+        height: 220px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        input {
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        textarea {
+            height: 100%;
+            width: 100%;
+            padding: 10px;
+            border-radius: 4px;
+        }
+    }
+}
+
+#submit {
+    background-color: $blue-color;
+    border: 1px solid $blue-color;
+    color: #fff;
+    margin-top: 30px;
+    transition: all 0.4s linear;
+    cursor: pointer;
+    width: 200px;
+    text-transform: uppercase;
+    &:hover {
+        background-color: #fff;
+        color: $blue-color;
+    }
+}
+
+#main-footer {
+    height: 50px;
+    width: 100%;
+    background: black;
+    text-align: center;
+    position: relative;
+    color: white;
+    text-align: center;
+    .copyright i.fab {
+        height: 20px;
+        width: 20px;
+    }
+    .social-links {
+        width: 30px;
+        height: 30px;
+        color: $blue-color;
+        text-align: center;
+        line-height: 20px;
+        font-size: 1.6em;
+        line-height: 50px;
+        &:hover {
+            color: white;
+        }
+    }
+
+
+}
