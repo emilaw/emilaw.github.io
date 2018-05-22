@@ -1,24 +1,30 @@
   'use strict';
 
 
-  var lastBuyValue = document.getElementById("kupno").innerHTML;
-  console.log(lastBuyValue);
-
-  var lastSellValue = document.getElementById("sprzedaz").innerHTML;
-  console.log(lastSellValue);
 
 
   $(function () {
 
+
       $('#btn').on("click", function (e) {
+
+          var lastBuyValue = $("#kupno").html();
+          console.log(lastBuyValue);
+
+          var lastSellValue = $("#sprzedaz").html();
+          console.log(lastSellValue);
+
 
           $.getJSON('https://blockchain.info/pl/ticker', function (json) {
               console.log(json);
 
-              var currentBuyValue = $("#kupno").html(json.THB.buy);
+              var currentBuyValue = json.PLN.buy;
+              $("#kupno").html(currentBuyValue);
               showIconB();
 
-              var currentSellValue = $("#sprzedaz").html(json.THB.sell);
+
+              var currentSellValue = json.PLN.sell;
+              $("#sprzedaz").html(currentSellValue);
               showIconS();
 
 
@@ -37,7 +43,8 @@
                       $("#stan-kupno .fa-arrow-down").removeClass("down");
                       $("#stan-kupno .fa-minus").removeClass("brak");
 
-                  } else {
+                  }
+                  if (lastBuyValue == currentBuyValue) {
 
                       console.log("blue");
                       $("#stan-kupno .fa-minus").addClass("brak");
@@ -61,7 +68,8 @@
                       $("#stan-sprzedaz .fa-arrow-down").removeClass("down");
                       $("#stan-sprzedaz .fa-minus").removeClass("brak");
 
-                  } else {
+                  }
+                  if (lastSellValue == currentSellValue) {
                       console.log("blue");
                       $("#stan-sprzedaz .fa-minus").addClass("brak");
                       $("#stan-sprzedaz .fa-arrow-up").removeClass("up");
