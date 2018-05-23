@@ -1,0 +1,21 @@
+body {
+  background-color: #22f; }
+
+p {
+  color: yellow; }
+
+nav ul {
+  padding: 0;
+  margin: 0; }
+  nav ul li {
+    display: inline-block; }
+    nav ul li a {
+      color: red; }
+      nav ul li a:hover {
+        color: white; }
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  border-radius: 25%; }
