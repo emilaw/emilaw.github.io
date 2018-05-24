@@ -1,0 +1,56 @@
+body {
+    text-align: center;
+}
+
+
+#menu1 {
+    width: 40vw;
+    height: 50%;
+    border-style: solid;
+    border-width: 200px 100vw 0 0;
+    border-color: skyblue transparent transparent;
+    position: fixed;
+}
+
+#nav-menu1 {
+    width: 30vw;
+    position: absolute;
+    left: 0px;
+    top: 70px;
+    text-align: center;
+    transform: translateY(-200px);
+}
+
+
+
+
+#menu2 {
+    width: 40vw;
+    height: 0;
+    border-style: solid;
+    border-width: 0 100vw 200px 0;
+    border-color: transparent skyblue transparent transparent;
+    position: relative;
+}
+
+#nav-menu2 {
+    width: 30vw;
+    position: relative;
+    left: 65vw;
+    right: 0px;
+    top: 70px;
+    line-height: 30px;
+    text-align: center;
+}
+
+
+ul > li {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul > li > a {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+}
