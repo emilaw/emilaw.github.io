@@ -1,0 +1,45 @@
+body {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    line-height: 2;
+    margin: 0;
+    bottom: 0;
+}
+
+#my-header {
+    background-color: red;
+    width: 100%;
+}
+
+
+
+#text-section {
+    background-color: skyblue;
+
+}
+
+#aside-left {
+    background-color: green;
+    text-align: center;
+}
+
+#aside-right {
+    background-color: pink;
+    text-align: center;
+}
+
+#my-footer {
+    background-color: blueviolet;
+    width: 100%;
+    margin: 0;
+    bottom: 0;
+
+}
+
+
+.line1,
+.line2 {
+    display: inline-block;
+    float: left;
+}
